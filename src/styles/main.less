@@ -1,0 +1,82 @@
+@breakMobile: ~"(max-width: 767px)";
+
+#colors() {
+    fundo1: #123E33;
+    fundo2: #C3E8DF;
+    c1: #5C9385;
+    c2: #fff;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+}
+
+.navbar, footer {
+    background-color: #colors[fundo1];
+}
+
+footer {
+    color: #colors[c2];
+}
+
+footer a {
+    color: #colors[fundo2];
+}
+
+footer a:hover {
+    color: #colors[c1];
+}
+
+#cabecalho .nav .nav-link.active {
+    background-color: #colors[c2];
+    color: #colors[fundo1];
+}
+
+#cabecalho .nav .nav-link, .navbar-brand, .navbar-brand:hover, .nav-produtos .nav-link.active:hover {
+    color: #colors[c2];
+}
+
+.section-title {
+    font-family: Kode Mono, monospace;
+}
+
+.navbar-toggler {
+    background-color: #colors[fundo2];
+    margin-bottom: 2vh;
+}
+
+.text-colored {
+    color: #colors[fundo1];
+}
+
+#nossa-historia, #produtos {
+    background-color: #colors[fundo2];
+}
+
+.nav-produtos .nav-link.active, #fale-conosco button {
+    background-color: #colors[fundo1];
+    color: #colors[c2];
+}
+
+.nav-produtos .nav-link:hover {
+    color: #colors[fundo1];
+}
+
+.social-links li {
+    list-style: none;
+    display: inline;
+}
+
+.social-links li a, footer a {
+    text-decoration: none;
+}
+
+.product {
+    background-color: #colors[c2];
+}
+
+@media @breakMobile {
+    .carousel-item img {
+        height: 280px;
+    }   
+}
